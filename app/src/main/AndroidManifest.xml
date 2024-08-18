@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.SCHEDULE_EXACT_ALARM"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rehapp_20"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".views.activity_bienvenida"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.final_modulo5"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo53"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo52"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo51"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo5"
+            android:exported="false" />
+        <activity
+            android:name=".views.final_modulo4"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo43"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo42"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo41"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo4"
+            android:exported="false" />
+        <activity
+            android:name=".views.final_modulo3"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo33"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo32"
+            android:exported="false" />
+        <activity
+            android:name=".views.final_modulo2"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo31"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo3"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo23"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo22"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo21"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo2"
+            android:exported="false" />
+        <activity
+            android:name=".views.inicio_Fisio"
+            android:exported="false" />
+        <activity
+            android:name=".views.Calendario"
+            android:exported="false" />
+        <activity
+            android:name=".views.Notificaciones"
+            android:exported="false" />
+        <activity
+            android:name=".views.perfil_usuario"
+            android:exported="false" />
+        <activity
+            android:name=".views.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".views.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo14"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo13"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo12"
+            android:exported="false" />
+        <activity
+            android:name=".views.final_Modulo1"
+            android:exported="false" />
+        <activity
+            android:name=".views.MainActivity_modulo_menu"
+            android:exported="false" />
+        <activity
+            android:name=".views.MainActivity_Menu_Principal"
+            android:exported="false" />
+        <activity
+            android:name=".views.MainActivity_Registro_Exitoso"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo1"
+            android:exported="false" />
+        <activity
+            android:name=".views.reproductor"
+            android:exported="false" />
+        <activity
+            android:name=".views.activity_registro_usuario"
+            android:exported="false" />
+        <activity
+            android:name=".views.activity_registro_fisio"
+            android:exported="false" />
+        <activity
+            android:name=".views.activity_encuesta1"
+            android:exported="false" />
+        <activity
+            android:name=".views.MainActivity_bienvenidausuario"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.activity_inicio_sesion"
+            android:exported="false" />
+    </application>
+
+</manifest>
