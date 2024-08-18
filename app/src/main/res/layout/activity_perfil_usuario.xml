@@ -13,307 +13,317 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center_horizontal">
-
-<androidx.cardview.widget.CardView
-        android:layout_width="160dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="55dp"
-        android:foregroundGravity="center_horizontal"
-        app:cardCornerRadius="80dp">
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/profe"
-            android:scaleType="centerCrop"/>
-
-    </androidx.cardview.widget.CardView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Javier Ramirez"
-        android:textColor="@color/textColorNombreUsuario"
-        android:textSize="20sp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="25dp"
-        android:textStyle="bold" />
-    <TextView
-        android:id="@+id/texto_correo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="eljavi@hotmail.com"
-        android:textSize="17sp"
-        android:layout_gravity="center_horizontal"
-        android:padding="3dp"
-        android:textColor="@color/textGmailUsuario"/>
-    <TextView
-        android:id="@+id/ButtonEditarUsuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Editar"
-        android:textColor="@color/textColorEdadPesoEstatura"
-        android:textSize="30sp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="-250dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hecho"
-        android:textColor="@color/textColorEdadPesoEstatura"
-        android:textSize="30sp"
-        android:layout_gravity="end"
-        android:layout_marginEnd="22dp"
-        android:layout_marginTop="-40dp"/>
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="215dp"
-        android:foregroundGravity="center_horizontal"
-        app:cardCornerRadius="15dp"
-        >
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:padding="10dp"
-            android:background="@color/black">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="55dp"
+                android:foregroundGravity="center_horizontal"
+                app:cardCornerRadius="80dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profe" />
+
+            </androidx.cardview.widget.CardView>
 
             <TextView
-                android:id="@+id/nivel"
+                android:id="@+id/user_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="NIVEL 1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:text="Javier Ramirez"
+                android:textColor="@color/textColorNombreUsuario"
                 android:textSize="20sp"
-                android:padding="1dp"
-                android:textColor="@color/white"/>
+                android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="35dp"
-                android:src="@drawable/baseline_hotel_class_24"
-                android:layout_marginStart="10dp"/>
+            <TextView
+                android:id="@+id/texto_correo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="eljavi@hotmail.com"
+                android:textColor="@color/textGmailUsuario"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/ButtonEditarUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="-250dp"
+                android:text="Editar"
+                android:textColor="@color/textColorEdadPesoEstatura"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="-40dp"
+                android:layout_marginEnd="22dp"
+                android:text="Hecho"
+                android:textColor="@color/textColorEdadPesoEstatura"
+                android:textSize="30sp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="215dp"
+                android:foregroundGravity="center_horizontal"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/nivel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp"
+                        android:text="NIVEL 1"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/baseline_hotel_class_24" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/fondoCardViewPerfilUsuario"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/borde_menu_edad"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="edad"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
+
+                        <EditText
+                            android:id="@+id/edit_edad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:text="45"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/textColorEdadPesoEstatura"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/borde_menu_edad"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Peso"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="68kg"
+                            android:textColor="@color/textColorEdadPesoEstatura"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Estatura"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1.60cm"
+                            android:textColor="@color/textColorEdadPesoEstatura"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textview_primer_nombre"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:text="Nombres"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_nombre"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="4dp">
+
+                <EditText
+                    android:id="@+id/edit_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre"
+                    android:padding="12dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/textview_apellido"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:text="Apellidos"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_apellido"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="4dp">
+
+                <EditText
+                    android:id="@+id/edit_apellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Apellidos"
+                    android:padding="12dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textview_ubicacion"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:text="Ubicacion"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_ubicacion"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-20dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="4dp">
+
+                <EditText
+                    android:id="@+id/edit_ubicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Dirección"
+                    android:padding="12dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textview_numero"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:text="Numero de Contacto"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_numero"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="4dp">
+
+                <EditText
+                    android:id="@+id/edit_numero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="+57***********"
+                    android:padding="12dp" />
+
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_gravity="center_horizontal"
-        app:cardCornerRadius="20dp"
-        android:layout_marginTop="15dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:weightSum="3"
-            android:orientation="horizontal"
-            android:padding="10dp"
-            android:background="@color/fondoCardViewPerfilUsuario">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:background="@drawable/borde_menu_edad">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="edad"
-                    android:textSize="25sp"
-                    android:textColor="@color/white"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="45"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/textColorEdadPesoEstatura"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:background="@drawable/borde_menu_edad">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Peso"
-                    android:textSize="25sp"
-                    android:textColor="@color/white"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="68kg"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/textColorEdadPesoEstatura"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_margin="20dp"
-                android:padding="15dp">
-
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Estatura"
-                    android:textSize="25sp"
-                    android:textColor="@color/white"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1.60cm"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/textColorEdadPesoEstatura"/>
-            </LinearLayout>
-        </LinearLayout>
-
-
-
-    </androidx.cardview.widget.CardView>
-
-    <TextView
-        android:id="@+id/textview_primer_nombre"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Nombres"
-        android:textSize="20sp"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="35dp"
-        android:textColor="@color/white"/>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardview_nombre"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-10dp"
-        android:layout_marginLeft="30dp"
-        app:cardCornerRadius="18dp"
-        app:cardElevation="4dp">
-
-        <EditText
-            android:id="@+id/edit_nombre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Nombre"
-            android:padding="12dp" />
-
-    </androidx.cardview.widget.CardView>
-
-
-    <TextView
-        android:id="@+id/textview_apellido"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Apellidos"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="35dp"
-        android:textColor="@color/white"/>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardview_apellido"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-10dp"
-        android:layout_marginLeft="30dp"
-        app:cardCornerRadius="18dp"
-        app:cardElevation="4dp">
-
-        <EditText
-            android:id="@+id/edit_apellido"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Apellidos"
-            android:padding="12dp" />
-
-    </androidx.cardview.widget.CardView>
-    <TextView
-        android:id="@+id/textview_ubicacion"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="Ubicacion"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="35dp"
-        android:textColor="@color/white"/>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardview_ubicacion"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="-20dp"
-        android:layout_marginLeft="30dp"
-        app:cardCornerRadius="18dp"
-        app:cardElevation="4dp">
-
-        <EditText
-            android:id="@+id/edit_ubicacion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Dirección"
-            android:padding="12dp" />
-
-    </androidx.cardview.widget.CardView>
-
-    <TextView
-        android:id="@+id/textview_numero"
-        android:layout_width="190dp"
-        android:layout_height="40dp"
-        android:text="Numero de Contacto"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="35dp"
-        android:textColor="@color/white"/>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardview_numero"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="-10dp"
-        android:layout_marginLeft="30dp"
-        app:cardCornerRadius="18dp"
-        app:cardElevation="4dp">
-
-        <EditText
-            android:id="@+id/edit_numero"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="+57***********"
-            android:padding="12dp" />
-
-    </androidx.cardview.widget.CardView>
-
-</LinearLayout>
     </ScrollView>
 
 </LinearLayout>
