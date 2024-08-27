@@ -45,4 +45,15 @@ class UserRepository@Inject constructor(
             throw e
         }
     }
+
+    suspend fun findPatientByIdentificationNumber(identificationNumber: String): Response<UserDTO> {
+        return try {
+            val response = userApiService.findPatientByIdentificationNumber(identificationNumber)
+            Log.d(TAG, "findPatientByIdentificationNumber: Respuesta del servidor: $response")
+            response
+        } catch (e: Exception) {
+            Log.e(TAG, "findPatientByIdentificationNumber: Error durante la búsqueda del paciente", e)
+            throw e
+        }
+    }
 }

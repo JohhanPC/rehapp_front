@@ -26,4 +26,9 @@ interface UserApiService {
     @PUT("/rehapp/user/updatePassword")
     suspend fun updatePassword(@Body updatePasswordDTO: UpdatePasswordDTO): Response<String>
 
+    @GET("/rehapp/user/find-patient")
+    suspend fun findPatientByIdentificationNumber(
+        @Query("identificationNumber") identificationNumber: String
+    ): Response<UserDTO>
+
 }

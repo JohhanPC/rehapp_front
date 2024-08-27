@@ -29,6 +29,9 @@ class UserViewModel @Inject constructor(
     private val _updateResult = MutableLiveData<Response<UserDTO>>()
     val updateResult: LiveData<Response<UserDTO>> = _updateResult
 
+    private val _patientSearchResult = MutableLiveData<Response<UserDTO>>()
+    val patientSearchResult: LiveData<Response<UserDTO>> = _patientSearchResult
+
     private val TAG = "UserViewModel"
 
     fun registerUser(user: PatientUserRegisterDTO) {
@@ -77,6 +80,17 @@ class UserViewModel @Inject constructor(
                 _updateResult.postValue(response)
             } catch (e: Exception) {
                 Log.e(TAG, "updateUser: Error durante la actualización de usuario", e)
+            }
+        }
+    }
+
+    fun findPatientByIdentificationNumber(identificationNumber: String) {
+        viewModelScope.launch {
+            try {
+                val response = userRepository.findPatientByIdentificationNumber(identificationNumber)
+                _patientSearchResult.postValue(response)
+            } catch (e: Exception) {
+                Log.e("UserViewModel", "Error buscando paciente: $e")
             }
         }
     }
