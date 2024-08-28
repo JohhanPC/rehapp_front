@@ -22,6 +22,7 @@
                 android:id="@+id/Liner1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:orientation="horizontal"
                 android:background="@color/fondo_editar_perfil_paciente">
 
@@ -38,16 +39,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
 
-                <TextView
-                    android:id="@+id/text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Editar Perfil"
-                    android:textColor="@color/textColorEdadPesoEstatura"
-                    android:textSize="24sp"
-                    android:textStyle="italic|bold"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="15dp"/>
+
             </LinearLayout>
 
 
@@ -56,13 +48,13 @@
                 android:id="@+id/text_titulo_editar_paciente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="Editar Perfil"
                 android:textColor="@color/textColorNombreUsuario"
                 android:textSize="24sp"
                 android:textStyle="italic|bold"
                 android:layout_gravity="center_horizontal"
-
-                android:layout_marginBottom="40dp"/>
+                android:layout_marginBottom="80dp"/>
 
             <EditText
                 android:id="@+id/text_nombre_paciente"
@@ -70,8 +62,8 @@
                 android:layout_height="45dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/borde_text_editar_perfil"
-                android:hint="Primer Nombre"
-                android:inputType="text"
+                android:hint="Nombre Completo"
+                android:inputType="number"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
@@ -79,13 +71,13 @@
                 android:layout_marginBottom="16dp" />
 
             <EditText
-                android:id="@+id/tex_apellidos_paciente"
+                android:id="@+id/text_numero_identificacion"
                 android:layout_width="230dp"
                 android:layout_height="45dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/borde_text_editar_perfil"
-                android:hint="Apellidos"
-                android:inputType="textEmailAddress"
+                android:hint="Numero de Identificacion"
+                android:inputType="number"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
@@ -99,7 +91,7 @@
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/borde_text_editar_perfil"
                 android:hint="Ubicación"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
@@ -112,7 +104,7 @@
                 android:layout_height="45dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/borde_text_editar_perfil"
-                android:hint="Teléfono de Contacto"
+                android:hint="Numero de Contacto"
                 android:inputType="textPassword"
                 android:textAlignment="center"
                 android:textColor="@color/black"
@@ -120,19 +112,6 @@
                 android:textSize="18sp"
                 android:layout_marginBottom="20dp" />
 
-            <EditText
-                android:id="@+id/text_genero_paciente"
-                android:layout_width="230dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/borde_text_editar_perfil"
-                android:hint="Masculino"
-                android:inputType="number"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:textSize="18sp"
-                android:layout_marginBottom="16dp" />
 
             <EditText
                 android:id="@+id/text_correo_paciente"
@@ -149,56 +128,31 @@
                 android:layout_marginBottom="20dp" />
 
             <EditText
-                android:id="@+id/text_edad_paciente"
+                android:id="@+id/text_edad"
                 android:layout_width="230dp"
                 android:layout_height="45dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/borde_text_editar_perfil"
                 android:hint="Edad"
-                android:inputType="phone"
+                android:inputType="number"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
                 android:textSize="18sp"
-                android:layout_marginBottom="30dp" />
+                android:layout_marginBottom="20dp" />
 
-            <EditText
-                android:id="@+id/text_peso_paciente"
-                android:layout_width="230dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/borde_text_editar_perfil"
-                android:hint="Peso"
-                android:inputType="phone"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:textSize="18sp"
-                android:layout_marginBottom="30dp" />
-            <EditText
-                android:id="@+id/text_EditarEstatura"
-                android:layout_width="230dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/borde_text_editar_perfil"
-                android:hint="Estatura"
-                android:inputType="phone"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:textSize="18sp"
-                android:layout_marginBottom="30dp" />
 
             <Button
                 android:id="@+id/ButtonEditarPaciente"
                 android:layout_width="185dp"
                 android:layout_height="43dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="80dp"
                 android:layout_marginBottom="16dp"
-                android:textSize="18sp"
+                android:backgroundTint="@color/btn_guardar"
                 android:text="Guardar"
                 android:textColor="@color/white"
-                android:backgroundTint="@color/botones_amarillos_inicio_sesion" />
+                android:textSize="18sp" />
 
         </LinearLayout>
     </ScrollView>

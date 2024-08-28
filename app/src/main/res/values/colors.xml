@@ -23,7 +23,7 @@
     <color name="fondo_calendario">#1E1E1E</color>
     <color name="fondo_cardCalendario">#20232D</color>
     <color name="azulCalendario">#007BA4</color>
-    <color name="botones_amarillos_inicio_sesion">#FCDB00</color>
+    <color name="botones_amarillos_inicio_sesion">#043343</color>
     <color name="titulosModulos">#9AE3FD</color>
     <color name="fondoModulosRosado">#F5EBEB</color>
     <color name="cardview_fin_modulos">#0091FF</color>
@@ -33,5 +33,8 @@
     <color name="fondoCardViewPerfilUsuario">#203447</color>
     <color name="cardview_fin_modulo2">#F7B500</color>
     <color name="cardview_fin_modulo3">#393D4A</color>
+    <color name="btn_guardar">#79D67B</color>
+    <color name="boton_verde_bienvenido">1A481B</color>
+
 
 </resources>

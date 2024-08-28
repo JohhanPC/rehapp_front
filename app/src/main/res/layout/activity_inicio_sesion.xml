@@ -104,15 +104,6 @@
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
-            <TextView
-                android:id="@+id/textViewOr"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="---------  or  ---------"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="18dp" />
 
 
             <LinearLayout
@@ -146,7 +137,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="8dp"
-                android:text="Forgot password?"
+                android:text="¿Olvidaste tu contraseña?"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="14dp" />
