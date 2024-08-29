@@ -72,7 +72,7 @@
                 android:textSize="13sp"
                 android:text="Iniciar Sesion"
                 android:textColor="@color/white"
-                android:backgroundTint="@color/botones_amarillos_inicio_sesion" />
+                android:backgroundTint="@color/boton_verde_bienvenido"/>
 
 
         </LinearLayout>
