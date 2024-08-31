@@ -11,85 +11,89 @@ import com.example.rehapp_20.R
 
 class modulo1 : AppCompatActivity() {
 
-    lateinit var playerView: PlayerView
-    lateinit var player:ExoPlayer
-
+    private lateinit var playerView1: PlayerView
+    private lateinit var playerView2: PlayerView
+    private lateinit var playerView3: PlayerView
+    private lateinit var playerView4: PlayerView
+    private lateinit var player1: ExoPlayer
+    private lateinit var player2: ExoPlayer
+    private lateinit var player3: ExoPlayer
+    private lateinit var player4: ExoPlayer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.modulo1)
 
-        val txt: ImageView  = findViewById(R.id.imagemodulo_play)
-        txt.setOnClickListener {
-
-            val intent: Intent = Intent(this, reproductor:: class.java)
-            startActivity(intent)
-
-    }
-
-        val txt1: ImageView  = findViewById(R.id.nav_back)
-        txt1.setOnClickListener {
-
-            val intent: Intent = Intent(this, modulo12:: class.java)
-            startActivity(intent)
+        // Inicializar el primer PlayerView y ExoPlayer
+        playerView1 = findViewById(R.id.video_ejercicio1_modulo1)
+        player1 = ExoPlayer.Builder(this).build()
+        playerView1.player = player1
+        val mediaItem1 = MediaItem.fromUri("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")
+        player1.setMediaItem(mediaItem1)
+        player1.prepare()
 
 
+        // Inicializar el segundo PlayerView y ExoPlayer
+        playerView2 = findViewById(R.id.video_ejercicio2_modulo1)
+        player2 = ExoPlayer.Builder(this).build()
+        playerView2.player = player2
+        val mediaItem2 = MediaItem.fromUri("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")
+        player2.setMediaItem(mediaItem2)
+        player2.prepare()
 
-    }
-
-        val txt2: ImageView  = findViewById(R.id.nav_Atras)
-        txt2.setOnClickListener {
-
-            val intent: Intent = Intent(this, MainActivity_modulo_menu:: class.java)
-            startActivity(intent)
-
-    }
-        val txt3: ImageView  = findViewById(R.id.nav_home)
-        txt3.setOnClickListener {
-
-            val intent: Intent = Intent(this, MainActivity_modulo_menu:: class.java)
-            startActivity(intent)
-
+        playerView2.setOnClickListener {
+            if (!player2.isPlaying) {
+                player2.play()
+            }
         }
 
-        val txt4: ImageView  = findViewById(R.id.nav_calendario)
-        txt4.setOnClickListener {
+        // Inicializar el tercer PlayerView y ExoPlayer
+        playerView3 = findViewById(R.id.video_ejercicio3_modulo1)
+        player3 = ExoPlayer.Builder(this).build()
+        playerView3.player = player3
+        val mediaItem3 = MediaItem.fromUri("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")
+        player3.setMediaItem(mediaItem3)
+        player3.prepare()
 
-            val intent: Intent = Intent(this, Calendario:: class.java)
-            startActivity(intent)
-
+        playerView3.setOnClickListener {
+            if (!player3.isPlaying) {
+                player3.play()
+            }
         }
 
-        val txt5: ImageView  = findViewById(R.id.nav_profile)
-        txt5.setOnClickListener {
+        // Inicializar el cuarto PlayerView y ExoPlayer
+        playerView4 = findViewById(R.id.video_ejercicio4_modulo1)
+        player4 = ExoPlayer.Builder(this).build()
+        playerView4.player = player4
+        val mediaItem4 = MediaItem.fromUri("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")
+        player4.setMediaItem(mediaItem4)
+        player4.prepare()
 
-            val intent: Intent = Intent(this, perfil_usuario:: class.java)
-            startActivity(intent)
-
+        playerView4.setOnClickListener {
+            if (!player4.isPlaying) {
+                player4.play()
+            }
         }
-
-        playerView=findViewById(R.id.videoBienvenida1)
-        player=ExoPlayer.Builder(this).build()
-
-        playerView.player=player
-
-        val mediaItem=MediaItem.fromUri("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")
-
-        player.setMediaItem(mediaItem)
-        player.prepare()
-        player.play()
     }
+
     override fun onPause() {
         super.onPause()
-        player.pause()
+        player1.pause()
+        player2.pause()
+        player3.pause()
+        player4.pause()
     }
+
     override fun onResume() {
         super.onResume()
-        player.play()
     }
+
     override fun onDestroy() {
         super.onDestroy()
-        player.release()
+        player1.release()
+        player2.release()
+        player3.release()
+        player4.release()
     }
 }
 
