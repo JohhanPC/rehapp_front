@@ -108,10 +108,10 @@
         5.Cuando pueda hacer este estiramiento con facilidad y sin sentir dolor, repita los pasos del 1 a 4. Pero esta vez extienda el brazo afectado hacia adelante y cierre el puño con la palma hacia abajo. Despues doble la muñeca y apunte con el puño hacia el piso..</string>
 
     //string modulo2 //
-    <string name="titulo_modulo2_ejercicio1">Flexión de la muñeca (hacia delante y hacia atrás)</string>
+    <string name="titulo_modulo2_ejercicio1">Extensión de Dedos</string>
     <string name="titulo_modulo2_ejercicio2">Elevación de la Muñeca</string>
     <string name="titulo_modulo2_ejercicio3">Desviaciación Radial y Cubital de la Muñeca</string>
-    <string name="titulo_modulo2_ejercicio4">Estiramiento del Extensor de la Muñeca</string>
+    <string name="titulo_modulo2_ejercicio4">Estiramiento con los brazos en posición de orar</string>
 
 
     <string name="descripcion_modulo2_ejercicio1">
@@ -137,35 +137,48 @@
 </string>
 
     <string name="descripcion_modulo2_ejercicio4">
-        1.	Con las palmas juntas y los codos apoyados ve separando progresivamente los codos gasta donde puedas.\n.\n
-        2.	Repite el movimiento sin levantarlos codos de la mesa ni las palmas.\n.\n
-        3.	 Realiza repeticiones de 5 a 10 veces. Reduzca la intensidad del ejercicio si empieza a sentir dolor.\n.\n
+     1.Con las palmas juntas y los codos apoyados ve separando progresivamente los codos gasta donde puedas.\n.\n
+
+    2.Repite el movimiento sin levantarlos codos de la mesa ni las palmas.\n.\n
+
+    3.Realiza repeticiones de 5 a 10 veces..\n.\n
+
+    Reduzca la intensidad del ejercicio si empieza a sentir dolor.
 </string>
 
     //string modulo3 //
 
-    <string name="titulo_modulo3_ejercicio1">Extensión del Dedo</string>
+    <string name="titulo_modulo3_ejercicio1">Movimientos en O</string>
     <string name="titulo_modulo3_ejercicio2">Apertura de los Dedos</string>
     <string name="titulo_modulo3_ejercicio3">Apretar una Pelota Antiestres</string>
-    <string name="titulo_modulo3_ejercicio4">Presionar la Palma de las Manos</string>
+    <string name="titulo_modulo3_ejercicio4">Estirar una Masa</string>
 
 
     <string name="descripcion_modulo3_ejercicio1">
-        1.Colocar la mano del dedo afectado en una superficie plana, como una mesa, por ejemplo, y levantar el dedo afectado lo máximo posible, manteniendo el estiramiento en esta posición, durante 10 a 30 segundos.\n.\n
-        2.Este ejercicio debe repetirse de 6 a 10 veces por día. Reduzca la intensidad del ejercicio si empieza a sentir dolor. </string>
+    1.Tocar el dedo afectado con el dedo pulgar y asi con los demas dedos, haciendo una (O)  o pinza..\n.\n
 
+    2.Mantener esa posición durante 5 segundos y volver a la posición inicial..\n.\n
+
+    3.Reduzca la intensidad del ejercicio si empieza a sentir dolor.
+    </string>
     <string name="descripcion_modulo3_ejercicio2">
-        1.Colocar un elástico alrededor de los dedos, con los dedos volteados hacia arriba, y luego hacer fuerza con los dedos para abrir la mano, estirando el elástico.\n.\n
-        2.Después, se debe volver lentamente a la posición inicial y repetir este ejercicio de 10 a 15 veces.\n.\n
-        3.Reduzca la intensidad del ejercicio si empieza a sentir dolor.</string>
+      1. Colocar un elástico alrededor de los dedos, con los dedos volteados hacia arriba, y luego hacer fuerza con los dedos para abrir la mano, estirando el elástico..\n.\n
+
+    2.Después, se debe volver lentamente a la posición inicial y repetir este ejercicio de 10 a 15 veces..\n.\n
+
+    3.Reduzca la intensidad del ejercicio si empieza a sentir dolor. </string>
 
     <string name="descripcion_modulo3_ejercicio3">
-        1.Colocar una bola en la palma de la mano y apretarla, presionando con fuerza y manteniendo esta posición durante unos segundos. Luego, aliviar la presión sobre la bola hasta que los dedos estén estirados.\n.\n
-        2.Repetir este ejercicio 3 veces al día de 6 a 10 veces. Reduzca la intensidad del ejercicio si empieza a sentir dolor.</string>
+       1. colocar una bola en la palma de la mano y apretarla, presionando con fuerza y manteniendo esta posición durante unos segundos. Luego, aliviar la presión sobre la bola hasta que los dedos estén estirados..\n.\n
+        2.Repetir este ejercicio 3 veces al día de 6 a 10 veces. Reduzca la intensidad del ejercicio si empieza a sentir dolor.
+    </string>
 
     <string name="descripcion_modulo3_ejercicio4">
-        1.juntar la palma de una mano con la otra y colocarlas en frente del pecho, como si se estuviese rezando. Mover las manos (juntas) hacia abajo, para estirar los dedos y las muñecas, hasta aproximadamente la altura de la cintura. Permanecer en esta posición durante 10 segundos.\n.\n
-        2.Luego, volver a la posición inicial, repitiendo varias veces al día.Reduzca la intensidad del ejercicio si empieza a sentir dolor.</string>
+       1. Colocar una masa tipo plastilina debajo de la mano e intentar estirarla.\n.\n
+        2.Debes de mantener los dedos extendidos, repitiendo el mismo ejercicio durante 2 minutos..\n.\n
+        3.Realizarlo varias veces al día. Reduzca la intensidad del ejercicio si empieza a sentir dolor.
+
+    </string>
 
 
     //string modulo4 //
