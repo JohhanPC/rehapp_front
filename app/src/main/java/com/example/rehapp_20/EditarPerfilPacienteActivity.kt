@@ -1,6 +1,8 @@
 package com.example.rehapp_20
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,17 @@ class EditarPerfilPacienteActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+
         }
-    }
+
+        val concuesta4: ImageView = findViewById(R.id.modulo1)
+        concuesta4.setOnClickListener {
+
+            val intent: Intent = Intent(this, perfil_paciente :: class.java)
+            startActivity(intent)
 }
+
+}
+}
+
+
