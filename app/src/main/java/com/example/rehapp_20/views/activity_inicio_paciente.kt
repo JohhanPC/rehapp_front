@@ -11,11 +11,12 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.rehapp_20.R
+import com.example.rehapp_20.perfil_paciente
 import com.example.rehapp_20.viewmodels.UserViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class activity_inicio_sesion : AppCompatActivity() {
+class activity_inicio_paciente : AppCompatActivity() {
 
     private val userViewModel: UserViewModel by viewModels()
 
@@ -41,7 +42,7 @@ class activity_inicio_sesion : AppCompatActivity() {
             if (response.isSuccessful) {
                 // Login exitoso, navegar a la pantalla de perfil
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, perfil_usuario::class.java)
+                val intent = Intent(this, perfil_paciente::class.java)
                 startActivity(intent)
                 finish() // Finaliza esta actividad
             } else {

@@ -66,7 +66,8 @@ class perfil_usuario : AppCompatActivity() {
                     email = it.email,
                     phoneNumber = phoneNumber.takeIf { it.isNotBlank() },
                     city = city.takeIf { it.isNotBlank() },
-                    userType = it.userType
+                    userType = it.userType,
+                    professionalCardNumber = it.professionalCardNumber
                 )
 
                 userViewModel.updateUser(updatedUser)

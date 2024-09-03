@@ -152,6 +152,16 @@
             android:name=".views.activity_encuesta1"
             android:exported="false" />
         <activity
+            android:name=".perfil_fisio"
+            android:exported="false"/>
+        <activity
+            android:name=".perfil_paciente"
+            android:exported="false"/>
+        <activity android:name=".EditPerfilFisioActivity"
+            android:exported="false" />
+        <activity android:name=".EditarPerfilPacienteActivity"
+            android:exported="false" />
+        <activity
             android:name=".views.MainActivity_bienvenidausuario"
             android:exported="true">
             <intent-filter>
@@ -161,7 +171,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".views.activity_inicio_sesion"
+            android:name=".views.activity_inicio_paciente"
             android:exported="false" />
     </application>
 

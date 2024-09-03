@@ -12,5 +12,6 @@ data class UserDTO(
     val email: String?,
     val phoneNumber: String?,
     val city: String?,
-    val userType: UserType?
+    val userType: UserType?,
+    val professionalCardNumber: String?
 )

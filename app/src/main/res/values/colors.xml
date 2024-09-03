@@ -34,8 +34,7 @@
     <color name="cardview_fin_modulo2">#F7B500</color>
     <color name="cardview_fin_modulo3">#393D4A</color>
     <color name="btn_guardar">#79D67B</color>
-    <color name="boton_verde_bienvenido">1A481B</color>
-
+    <color name="boton_verde_bienvenido">#1A481B</color>
     <color name="fondo_perfil_paciente">#11263C</color>
     <color name="fondo_perfil_fisio">#03475F</color>
 

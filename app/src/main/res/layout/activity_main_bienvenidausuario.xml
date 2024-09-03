@@ -9,7 +9,7 @@
     android:layout_gravity="center"
     android:padding="30dp"
     android:background="@drawable/inicio_bienvenida"
-    tools:context=".views.activity_inicio_sesion">
+    tools:context=".views.activity_inicio_paciente">
 
     <ScrollView
         android:layout_width="match_parent"

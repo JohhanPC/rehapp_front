@@ -115,7 +115,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold|italic" />
             <EditText
-                android:id="@+id/edit_text_apellidos_fisio"
+                android:id="@+id/edit_text_numero_identificacion"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
                 android:layout_gravity="center_horizontal"
@@ -138,7 +138,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold|italic" />
             <EditText
-                android:id="@+id/edit_text_ubicacion"
+                android:id="@+id/edit_text_tarjeta"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
                 android:layout_gravity="center_horizontal"
@@ -242,7 +242,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/borde_text_editar_perfil"
-                android:hint="Bogotá"
+                android:hint="Ciudad"
                 android:inputType="number"
                 android:textAlignment="center"
                 android:textColor="@color/black"

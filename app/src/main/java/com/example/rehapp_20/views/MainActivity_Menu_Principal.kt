@@ -32,7 +32,7 @@ class MainActivity_Menu_Principal : AppCompatActivity() {
         val Concuenta: ImageView  = findViewById(R.id.imagen_modulo4)
         Concuenta.setOnClickListener {
 
-            val intent: Intent = Intent(this, activity_inicio_sesion:: class.java)
+            val intent: Intent = Intent(this, activity_inicio_paciente:: class.java)
             startActivity(intent)
 
         }

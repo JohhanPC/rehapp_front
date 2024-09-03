@@ -11,6 +11,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.rehapp_20.R
+import com.example.rehapp_20.perfil_fisio
 import com.example.rehapp_20.viewmodels.UserViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -38,11 +39,11 @@ class inicio_Fisio : AppCompatActivity() {
         // Observa el resultado del login
         userViewModel.loginResult.observe(this, Observer { response ->
             if (response.isSuccessful) {
-                // Login exitoso, navegar a la pantalla de perfil
+                Log.d("inicio_Fisio", "Login exitoso, navegando a perfil_fisio")
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, perfil_usuario::class.java)
+                val intent = Intent(this, perfil_fisio::class.java)
                 startActivity(intent)
-                finish() // Finaliza esta actividad
+                finish()
             } else {
                 // Mostrar error en caso de fallo
                 Toast.makeText(this, "Error en el inicio de sesión: ${response.message()}", Toast.LENGTH_SHORT).show()
