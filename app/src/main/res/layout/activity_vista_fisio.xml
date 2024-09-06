@@ -64,7 +64,7 @@
                     android:padding="10dp">
 
                     <TextView
-                        android:id="@+id/paciente"
+                        android:id="@+id/nombre_fisio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Cristina Aguilera"
@@ -77,7 +77,7 @@
                         android:id="@+id/titulo_descripcion_modulo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Descripción del Tratamiento"
+                        android:text="perfil fisioterapeuta"
                         android:textStyle="bold"
                         android:textSize="18sp"
                         android:textColor="@color/black" />
@@ -86,7 +86,7 @@
                         android:id="@+id/texto_descripcion_modulo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Procedimiento integral de fisioterapia diseñado para recuperar la función, sanar lesiones y prevenir futuras complicaciones. Restaurar la movilidad, fuerza y función de la muñeca con técnicas de movimiento correcto y hábitos saludables."
+                        android:text="Especialista en fisioterapia dedicado a la recuperación, sanación y prevención de lesiones a través de técnicas terapéuticas avanzadas. Ofrezco tratamientos personalizados que combinan terapia manual, ejercicios terapéuticos y educación del paciente para optimizar resultados."
                         android:textSize="14sp"
                         android:textColor="#000000"
                         android:layout_marginBottom="8dp" />
