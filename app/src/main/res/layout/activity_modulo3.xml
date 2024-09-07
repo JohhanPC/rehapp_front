@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/fondo_modulo3"
-    tools:context=".views.modulo1">
+    tools:context=".modulo3">
 
 
     <LinearLayout

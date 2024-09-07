@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/fondo_modulo1"
-    tools:context=".views.modulo1">
+    tools:context=".modulo1">
 
 
     <LinearLayout
@@ -185,7 +185,7 @@
                     android:background="@color/white">
 
                     <ImageView
-                        android:id="@+id/imageNombreEjercicio2"
+                        android:id="@+id/image_ejercicio_play"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="20dp"
@@ -231,7 +231,7 @@
                     android:textColor="@color/black" />
 
                 <ImageView
-                    android:id="@+id/imagemodulo_play"
+                    android:id="@+id/imagemodulo1_play"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:src="@drawable/play_pantalla_completa"

@@ -1,4 +1,4 @@
-package com.example.rehapp_20.views
+package com.example.rehapp_20
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,9 @@ import androidx.media3.common.MediaItem
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.ui.PlayerView
 import com.example.rehapp_20.R
+import com.example.rehapp_20.views.Calendario
+import com.example.rehapp_20.views.MainActivity_Menu_Principal
+import com.example.rehapp_20.views.final_Modulo1
 
 class modulo1 : AppCompatActivity() {
 
@@ -23,6 +26,69 @@ class modulo1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.modulo1)
+
+
+        val txt: ImageView  = findViewById(R.id.image_finalizar_modulo)
+        txt.setOnClickListener {
+
+            val intent: Intent = Intent(this, final_Modulo1 :: class.java)
+            startActivity(intent)
+
+        }
+        val txt1: ImageView  = findViewById(R.id.image_ejercicio1_play)
+        txt1.setOnClickListener {
+
+            val intent: Intent = Intent(this, Reproductor11:: class.java)
+            startActivity(intent)
+
+
+    }
+    val txt2: ImageView  = findViewById(R.id.imagemodulo1_play)
+    txt2.setOnClickListener {
+
+        val intent: Intent = Intent(this, Reproductor12:: class.java)
+        startActivity(intent)
+
+    }
+        val txt3: ImageView  = findViewById(R.id.image_ejercicio3_play)
+        txt3.setOnClickListener {
+
+            val intent: Intent = Intent(this, Reproductor13:: class.java)
+            startActivity(intent)
+
+        }
+
+        val txt4: ImageView  = findViewById(R.id.image_ejercicio4_play)
+        txt4.setOnClickListener {
+
+            val intent: Intent = Intent(this, Reproductor14:: class.java)
+            startActivity(intent)
+        }
+        val txt5: ImageView  = findViewById(R.id.nav_home)
+        txt5.setOnClickListener {
+
+            val intent: Intent = Intent(this, MainActivity_Menu_Principal :: class.java)
+            startActivity(intent)
+        }
+
+        val txt6: ImageView  = findViewById(R.id.nav_calendario)
+        txt6.setOnClickListener {
+
+            val intent: Intent = Intent(this, Calendario:: class.java)
+            startActivity(intent)
+        }
+
+
+        val txt7: ImageView  = findViewById(R.id.nav_profile)
+        txt7.setOnClickListener {
+
+            val intent: Intent = Intent(this, perfil_paciente:: class.java)
+            startActivity(intent)
+        }
+
+
+
+
 
         // Inicializar el primer PlayerView y ExoPlayer
         playerView1 = findViewById(R.id.video_ejercicio1_modulo1)
@@ -96,6 +162,7 @@ class modulo1 : AppCompatActivity() {
         player4.release()
     }
 }
+
 
 
 

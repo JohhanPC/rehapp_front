@@ -7,4 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".Reproductor33">
 
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/videoModulo1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:show_buffering="when_playing"
+        app:show_shuffle_button="true"
+        android:layout_centerInParent="true"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

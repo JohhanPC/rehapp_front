@@ -29,18 +29,7 @@ class MainActivity_modulo_menu : AppCompatActivity() {
 
             val intent: Intent = Intent(this, modulo3:: class.java)
             startActivity(intent)
-        }
-        val Concuenta1: LinearLayout  = findViewById(R.id.Liner4)
-        Concuenta1.setOnClickListener {
 
-            val intent: Intent = Intent(this, modulo4 :: class.java)
-            startActivity(intent)
-        }
-        val Concuenta5: LinearLayout  = findViewById(R.id.Liner5)
-        Concuenta5.setOnClickListener {
-
-            val intent: Intent = Intent(this, modulo5 :: class.java)
-            startActivity(intent)
         }
     val txt3: ImageView  = findViewById(R.id.nav_home)
     txt3.setOnClickListener {

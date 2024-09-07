@@ -24,7 +24,7 @@ class activity_bienvenida : AppCompatActivity() {
         val txt: Button=findViewById(R.id.button_comencemos)
         txt.setOnClickListener {
 
-            val intent: Intent = Intent(this, MainActivity_Menu_Principal :: class.java)
+            val intent: Intent = Intent(this, activity_inicio_sesion  :: class.java)
             startActivity(intent)
 
     }

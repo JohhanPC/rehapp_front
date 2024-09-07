@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import com.example.rehapp_20.R
+import com.example.rehapp_20.perfil_paciente
 
 class MainActivity_Menu_Principal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +33,7 @@ class MainActivity_Menu_Principal : AppCompatActivity() {
         val Concuenta: ImageView  = findViewById(R.id.imagen_modulo4)
         Concuenta.setOnClickListener {
 
-            val intent: Intent = Intent(this, activity_inicio_sesion:: class.java)
+            val intent: Intent = Intent(this, perfil_paciente:: class.java)
             startActivity(intent)
 
         }
