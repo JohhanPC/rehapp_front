@@ -15,7 +15,7 @@ class MainActivity_Registro_Exitoso : AppCompatActivity() {
         val txt: Button = findViewById(R.id.ButtonAvanzarEncuesta)
         txt.setOnClickListener {
 
-            val intent: Intent = Intent(this, perfil_usuario:: class.java)
+            val intent: Intent = Intent(this, MainActivity_Menu_Principal:: class.java)
             startActivity(intent)
 
         }

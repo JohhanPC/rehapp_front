@@ -12,6 +12,7 @@ import androidx.lifecycle.Observer
 import com.example.rehapp_20.R
 import com.example.rehapp_20.enums.UserType
 import com.example.rehapp_20.models.PatientUserRegisterDTO
+import com.example.rehapp_20.registro_exitoso_Fisio
 import com.example.rehapp_20.viewmodels.UserViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -53,7 +54,7 @@ class activity_registro_usuario : AppCompatActivity() {
             if (response.isSuccessful) {
                 Log.d(TAG, "onCreate: Registro exitoso con respuesta: ${response.body()}")
                 Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, activity_encuesta1::class.java)
+                val intent = Intent(this, registro_exitoso_Fisio::class.java)
                 startActivity(intent)
             } else {
                 Log.e(TAG, "onCreate: Fallo en el registro con código: ${response.code()}, mensaje: ${response.message()}")

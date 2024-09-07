@@ -42,7 +42,7 @@ class activity_inicio_paciente : AppCompatActivity() {
             if (response.isSuccessful) {
                 // Login exitoso, navegar a la pantalla de perfil
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, perfil_paciente::class.java)
+                val intent = Intent(this, MainActivity_Menu_Principal::class.java)
                 startActivity(intent)
                 finish() // Finaliza esta actividad
             } else {
