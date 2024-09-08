@@ -6,9 +6,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.LinearLayout
 import com.example.rehapp_20.R
-import com.example.rehapp_20.modulo1
-import com.example.rehapp_20.modulo2
-import com.example.rehapp_20.modulo3
+
 
 // La clase MainActivity_modulo_menu extiende AppCompatActivity, lo que la convierte en una actividad principal de la aplicación.
 class MainActivity_modulo_menu : AppCompatActivity() {
