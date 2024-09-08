@@ -6,6 +6,7 @@ import androidx.media3.common.MediaItem
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.ui.PlayerView
 import com.example.rehapp_20.R
+import com.example.rehapp_20.utils.Constants
 
 class Reproductor32: AppCompatActivity() {
 
@@ -14,6 +15,7 @@ class Reproductor32: AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val urlVideos = Constants.BASE_URL
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reproductor32)
 
@@ -24,7 +26,7 @@ class Reproductor32: AppCompatActivity() {
 
         playerView.player=player
 
-        val mediaItem=MediaItem.fromUri("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")
+        val mediaItem=MediaItem.fromUri(urlVideos + "video_3.2.mp4")
 
         player.setMediaItem(mediaItem)
         player.prepare()
