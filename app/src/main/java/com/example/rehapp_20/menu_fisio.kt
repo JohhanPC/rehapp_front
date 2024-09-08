@@ -23,8 +23,13 @@ class menu_fisio : AppCompatActivity() {
 
             val intent: Intent = Intent(this, perfil_fisio :: class.java)
             startActivity(intent)
+        }
+            val concuesta1: ImageView = findViewById(R.id.imagen_modulo1)
+            concuesta1.setOnClickListener {
 
+                val intent: Intent = Intent(this, mis_pacientes :: class.java)
+                startActivity(intent)
 
-    }
+            }
 }
 }

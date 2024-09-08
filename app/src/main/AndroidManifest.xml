@@ -24,6 +24,8 @@
         tools:targetApi="31">
         <activity
             android:name=".Reproductor34"
+            android:exported="false" />
+        <activity
             android:name=".vista_fisio"
             android:exported="false" />
         <activity
@@ -90,10 +92,10 @@
             android:name=".views.final_modulo2"
             android:exported="false" />
         <activity
-            android:name=".views.modulo3"
+            android:name=".modulo3"
             android:exported="false" />
         <activity
-            android:name=".views.modulo2"
+            android:name=".modulo2"
             android:exported="false" />
         <activity
             android:name=".views.inicio_Fisio"
@@ -123,7 +125,7 @@
             android:name=".views.MainActivity_Registro_Exitoso"
             android:exported="false" />
         <activity
-            android:name=".views.modulo1"
+            android:name=".modulo1"
             android:exported="false" />
         <activity
             android:name=".views.reproductor"

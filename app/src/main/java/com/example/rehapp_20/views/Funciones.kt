@@ -7,37 +7,41 @@ import android.content.Intent
 import android.os.Build
 import androidx.core.app.NotificationCompat
 
-class Funciones
-{
-    fun NotificacionInstantanea(context: Context,Titulo:String, TextoCorto:String, TextoLargo:String) {
+class Funciones {
 
-        //para abrir la app al dar clic en notificacion
+    // Función para crear y mostrar una notificación instantánea
+    fun NotificacionInstantanea(context: Context, Titulo: String, TextoCorto: String, TextoLargo: String) {
 
-        val intent= Intent(context, Calendario::class.java).apply {
-            flags= Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        // Intent para abrir la actividad Calendario cuando se hace clic en la notificación
+        val intent = Intent(context, Calendario::class.java).apply {
+            // Configura el Intent para que limpie el historial y abra la actividad en una nueva tarea
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         }
 
-        val flag:Int
-        if (Build.VERSION.SDK_INT>= Build.VERSION_CODES.M){
-            flag= PendingIntent.FLAG_IMMUTABLE
+        // Definición de la flag para el PendingIntent según la versión de Android
+        val flag: Int = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            PendingIntent.FLAG_IMMUTABLE
+        } else {
+            0
         }
-        else{
-            flag=0
-        }
 
-        val pendingIntent: PendingIntent = PendingIntent.getActivity(context,0,intent,flag)
+        // PendingIntent para que la notificación abra la actividad Calendario
+        val pendingIntent: PendingIntent = PendingIntent.getActivity(context, 0, intent, flag)
 
+        // Creación de la notificación usando NotificationCompat.Builder
+        val notificacion = NotificationCompat.Builder(context, AlarmaNotificacion.CHANNEL_ID)
+            .setSmallIcon(android.R.drawable.ic_menu_my_calendar) // Icono de la notificación
+            .setContentTitle(Titulo) // Título de la notificación
+            .setContentText(TextoCorto) // Texto corto de la notificación
+            .setStyle(NotificationCompat.BigTextStyle().bigText(TextoLargo)) // Estilo expandido con texto largo
+            .setPriority(NotificationCompat.PRIORITY_DEFAULT) // Prioridad de la notificación
+            .setContentIntent(pendingIntent) // Acción que se ejecuta al hacer clic en la notificación
+            .build() // Construye la notificación
 
-        var notificacion = NotificationCompat.Builder(context, AlarmaNotificacion.CHANNEL_ID)
-            .setSmallIcon(android.R.drawable.ic_menu_my_calendar)
-            .setContentTitle(Titulo)
-            .setContentText(TextoCorto)
-            .setStyle(NotificationCompat.BigTextStyle().bigText(TextoLargo))
-            .setPriority(NotificationCompat.PRIORITY_DEFAULT) //para android posterior a 7 se pone en el channel
-            .setContentIntent(pendingIntent)
-            .build()
+        // Obtención del NotificationManager para enviar la notificación
+        val manager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
-        val manager=context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        // Muestra la notificación
         manager.notify(AlarmaNotificacion.NOTIFICATION_ID, notificacion)
     }
 }

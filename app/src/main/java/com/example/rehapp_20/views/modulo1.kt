@@ -14,6 +14,7 @@ import com.example.rehapp_20.views.final_Modulo1
 
 class modulo1 : AppCompatActivity() {
 
+    // Variables para los PlayerView y ExoPlayer
     private lateinit var playerView1: PlayerView
     private lateinit var playerView2: PlayerView
     private lateinit var playerView3: PlayerView
@@ -25,72 +26,65 @@ class modulo1 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.modulo1)
+        setContentView(R.layout.modulo1) // Establece el diseño de la actividad con el layout correspondiente.
 
-
-        val txt: ImageView  = findViewById(R.id.image_finalizar_modulo)
+        // Configura el botón para finalizar el módulo y navegar a 'final_Modulo1'
+        val txt: ImageView = findViewById(R.id.image_finalizar_modulo)
         txt.setOnClickListener {
-
-            val intent: Intent = Intent(this, final_Modulo1 :: class.java)
+            val intent: Intent = Intent(this, final_Modulo1::class.java)
             startActivity(intent)
-
         }
-        val txt1: ImageView  = findViewById(R.id.image_ejercicio1_play)
+
+        // Configura el botón para reproducir el primer ejercicio y navegar a 'Reproductor11'
+        val txt1: ImageView = findViewById(R.id.image_ejercicio1_play)
         txt1.setOnClickListener {
-
-            val intent: Intent = Intent(this, Reproductor11:: class.java)
+            val intent: Intent = Intent(this, Reproductor11::class.java)
             startActivity(intent)
+        }
 
+        // Configura el botón para reproducir el segundo ejercicio y navegar a 'Reproductor12'
+        val txt2: ImageView = findViewById(R.id.imagemodulo1_play)
+        txt2.setOnClickListener {
+            val intent: Intent = Intent(this, Reproductor12::class.java)
+            startActivity(intent)
+        }
 
-    }
-    val txt2: ImageView  = findViewById(R.id.imagemodulo1_play)
-    txt2.setOnClickListener {
-
-        val intent: Intent = Intent(this, Reproductor12:: class.java)
-        startActivity(intent)
-
-    }
-        val txt3: ImageView  = findViewById(R.id.image_ejercicio3_play)
+        // Configura el botón para reproducir el tercer ejercicio y navegar a 'Reproductor13'
+        val txt3: ImageView = findViewById(R.id.image_ejercicio3_play)
         txt3.setOnClickListener {
-
-            val intent: Intent = Intent(this, Reproductor13:: class.java)
+            val intent: Intent = Intent(this, Reproductor13::class.java)
             startActivity(intent)
-
         }
 
-        val txt4: ImageView  = findViewById(R.id.image_ejercicio4_play)
+        // Configura el botón para reproducir el cuarto ejercicio y navegar a 'Reproductor14'
+        val txt4: ImageView = findViewById(R.id.image_ejercicio4_play)
         txt4.setOnClickListener {
-
-            val intent: Intent = Intent(this, Reproductor14:: class.java)
+            val intent: Intent = Intent(this, Reproductor14::class.java)
             startActivity(intent)
         }
-        val txt5: ImageView  = findViewById(R.id.nav_home)
+
+        // Configura el botón de navegación a la pantalla principal
+        val txt5: ImageView = findViewById(R.id.nav_home)
         txt5.setOnClickListener {
-
-            val intent: Intent = Intent(this, MainActivity_Menu_Principal :: class.java)
+            val intent: Intent = Intent(this, MainActivity_Menu_Principal::class.java)
             startActivity(intent)
         }
 
-        val txt6: ImageView  = findViewById(R.id.nav_calendario)
+        // Configura el botón de navegación al calendario
+        val txt6: ImageView = findViewById(R.id.nav_calendario)
         txt6.setOnClickListener {
-
-            val intent: Intent = Intent(this, Calendario:: class.java)
+            val intent: Intent = Intent(this, Calendario::class.java)
             startActivity(intent)
         }
 
-
-        val txt7: ImageView  = findViewById(R.id.nav_profile)
+        // Configura el botón de navegación al perfil del paciente
+        val txt7: ImageView = findViewById(R.id.nav_profile)
         txt7.setOnClickListener {
-
-            val intent: Intent = Intent(this, perfil_paciente:: class.java)
+            val intent: Intent = Intent(this, perfil_paciente::class.java)
             startActivity(intent)
         }
 
-
-
-
-
-        // Inicializar el primer PlayerView y ExoPlayer
+        // Inicializa el primer PlayerView y ExoPlayer para el primer video
         playerView1 = findViewById(R.id.video_ejercicio1_modulo1)
         player1 = ExoPlayer.Builder(this).build()
         playerView1.player = player1
@@ -98,8 +92,7 @@ class modulo1 : AppCompatActivity() {
         player1.setMediaItem(mediaItem1)
         player1.prepare()
 
-
-        // Inicializar el segundo PlayerView y ExoPlayer
+        // Inicializa el segundo PlayerView y ExoPlayer para el segundo video
         playerView2 = findViewById(R.id.video_ejercicio2_modulo1)
         player2 = ExoPlayer.Builder(this).build()
         playerView2.player = player2
@@ -107,13 +100,14 @@ class modulo1 : AppCompatActivity() {
         player2.setMediaItem(mediaItem2)
         player2.prepare()
 
+        // Configura el PlayerView para iniciar la reproducción al hacer clic
         playerView2.setOnClickListener {
             if (!player2.isPlaying) {
                 player2.play()
             }
         }
 
-        // Inicializar el tercer PlayerView y ExoPlayer
+        // Inicializa el tercer PlayerView y ExoPlayer para el tercer video
         playerView3 = findViewById(R.id.video_ejercicio3_modulo1)
         player3 = ExoPlayer.Builder(this).build()
         playerView3.player = player3
@@ -121,13 +115,14 @@ class modulo1 : AppCompatActivity() {
         player3.setMediaItem(mediaItem3)
         player3.prepare()
 
+        // Configura el PlayerView para iniciar la reproducción al hacer clic
         playerView3.setOnClickListener {
             if (!player3.isPlaying) {
                 player3.play()
             }
         }
 
-        // Inicializar el cuarto PlayerView y ExoPlayer
+        // Inicializa el cuarto PlayerView y ExoPlayer para el cuarto video
         playerView4 = findViewById(R.id.video_ejercicio4_modulo1)
         player4 = ExoPlayer.Builder(this).build()
         playerView4.player = player4
@@ -135,6 +130,7 @@ class modulo1 : AppCompatActivity() {
         player4.setMediaItem(mediaItem4)
         player4.prepare()
 
+        // Configura el PlayerView para iniciar la reproducción al hacer clic
         playerView4.setOnClickListener {
             if (!player4.isPlaying) {
                 player4.play()
@@ -142,6 +138,7 @@ class modulo1 : AppCompatActivity() {
         }
     }
 
+    // Pausa todos los reproductores cuando la actividad está en pausa
     override fun onPause() {
         super.onPause()
         player1.pause()
@@ -150,10 +147,12 @@ class modulo1 : AppCompatActivity() {
         player4.pause()
     }
 
+    // Método vacío para manejar la reanudación (puedes agregar funcionalidad si es necesario)
     override fun onResume() {
         super.onResume()
     }
 
+    // Libera los recursos de los reproductores cuando la actividad se destruye
     override fun onDestroy() {
         super.onDestroy()
         player1.release()
@@ -162,9 +161,6 @@ class modulo1 : AppCompatActivity() {
         player4.release()
     }
 }
-
-
-
 
 
 
