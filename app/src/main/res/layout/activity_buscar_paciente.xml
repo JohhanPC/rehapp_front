@@ -79,7 +79,7 @@
 
 
             <Button
-                android:id="@+id/buttonNuevoModulo"
+                android:id="@+id/buttonBuscarPaciente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
