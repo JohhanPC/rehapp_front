@@ -54,5 +54,5 @@ class activity_bienvenida : AppCompatActivity() {
         super.onDestroy()
         player.release()
     }
-    }
+}
 
