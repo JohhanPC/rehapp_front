@@ -5,12 +5,13 @@ import com.example.rehapp_20.apiservice.ModuleAssignmentApiService
 import com.example.rehapp_20.apiservice.PhysioApiService
 import com.example.rehapp_20.apiservice.UserApiService
 import com.example.rehapp_20.apiservice.VideoApiService
+import com.example.rehapp_20.utils.Constants
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
 
-    private const val BASE_URL = "http://192.168.10.8:8080/"
+    private const val BASE_URL = Constants.BASE_URL
 
     private val retrofit: Retrofit by lazy {
         Retrofit.Builder()
