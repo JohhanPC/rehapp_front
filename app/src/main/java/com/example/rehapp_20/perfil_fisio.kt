@@ -37,18 +37,18 @@ class perfil_fisio : AppCompatActivity() {
         user?.let {
             findViewById<TextView>(R.id.textnombre_fisio).text = it.userName
             findViewById<TextView>(R.id.textcorreo_fisio).text = it.email
-            findViewById<EditText>(R.id.edit_text_nombre_fisio).setText(it.userName)
-            findViewById<EditText>(R.id.edit_text_numero_identificacion).setText(it.identificationNumber)
-            findViewById<EditText>(R.id.edit_text_ubicacion_fisio).setText(it.city)
-            findViewById<EditText>(R.id.edit_text_contacto).setText(it.phoneNumber)
-            findViewById<EditText>(R.id.edit_text_correo_fisio).setText(it.email)
-            findViewById<EditText>(R.id.edit_text_edad_fisio).setText(it.age.toString())
-            findViewById<EditText>(R.id.edit_text_tarjeta).setText(it.professionalCardNumber)
+            findViewById<TextView>(R.id.edit_text_nombre_fisio).setText(it.userName)
+            findViewById<TextView>(R.id.edit_text_numero_identificacion).setText(it.identificationNumber)
+            findViewById<TextView>(R.id.edit_text_ubicacion_fisio).setText(it.city)
+            findViewById<TextView>(R.id.edit_text_contacto).setText(it.phoneNumber)
+            findViewById<TextView>(R.id.edit_text_correo_fisio).setText(it.email)
+            findViewById<TextView>(R.id.edit_text_edad_fisio).setText(it.age.toString())
+            findViewById<TextView>(R.id.edit_text_tarjeta).setText(it.professionalCardNumber)
         }
 
         // Configurar los listeners para "Salir" y "Editar"
         findViewById<TextView>(R.id.text_Salir).setOnClickListener {
-            val intent = Intent(this, MainActivity_Menu_Principal::class.java)
+            val intent = Intent(this, menu_fisio::class.java)
             startActivity(intent)
         }
 

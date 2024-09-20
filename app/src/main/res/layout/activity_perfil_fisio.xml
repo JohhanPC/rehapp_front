@@ -91,7 +91,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold|italic" />
 
-            <EditText
+            <TextView
                 android:id="@+id/edit_text_nombre_fisio"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
@@ -114,7 +114,8 @@
                 android:textColor="@color/grismodulo2"
                 android:textSize="14sp"
                 android:textStyle="bold|italic" />
-            <EditText
+
+            <TextView
                 android:id="@+id/edit_text_numero_identificacion"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
@@ -161,7 +162,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold|italic" />
 
-            <EditText
+            <TextView
                 android:id="@+id/edit_text_contacto"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
@@ -186,7 +187,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold|italic" />
 
-            <EditText
+            <TextView
                 android:id="@+id/edit_text_correo_fisio"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
@@ -210,7 +211,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold|italic" />
 
-            <EditText
+            <TextView
                 android:id="@+id/edit_text_edad_fisio"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
@@ -235,7 +236,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold|italic" />
 
-            <EditText
+            <TextView
                 android:id="@+id/edit_text_ubicacion_fisio"
                 android:layout_width="300dp"
                 android:layout_height="45dp"

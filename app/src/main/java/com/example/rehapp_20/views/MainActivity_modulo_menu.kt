@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.LinearLayout
 import com.example.rehapp_20.R
+import com.example.rehapp_20.perfil_paciente
 
 
 // La clase MainActivity_modulo_menu extiende AppCompatActivity, lo que la convierte en una actividad principal de la aplicación.
@@ -66,7 +67,7 @@ class MainActivity_modulo_menu : AppCompatActivity() {
 
         // Listener para la imagen que inicia la actividad 'perfil_usuario'.
         txt5.setOnClickListener {
-            val intent: Intent = Intent(this, perfil_usuario::class.java)
+            val intent: Intent = Intent(this, perfil_paciente::class.java)
             startActivity(intent) // Inicia la actividad 'perfil_usuario'.
         }
 

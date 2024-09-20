@@ -1,6 +1,7 @@
 package com.example.rehapp_20.views
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -13,7 +14,6 @@ import com.example.rehapp_20.Reproductor32
 import com.example.rehapp_20.Reproductor33
 import com.example.rehapp_20.Reproductor34
 import com.example.rehapp_20.perfil_paciente
-import com.example.rehapp_20.utils.Constants
 
 class modulo3 : AppCompatActivity() {
 
@@ -41,13 +41,12 @@ class modulo3 : AppCompatActivity() {
     }
 
     private fun initializePlayers() {
-        val urlVideos = Constants.BASE_URL
-
         // Video 1
         playerView1 = findViewById(R.id.video_ejercicio1_modulo3)
         player1 = ExoPlayer.Builder(this).build()
         playerView1.player = player1
-        val mediaItem1 = MediaItem.fromUri(urlVideos + "video_3.1.mp4")
+        val videoUri1 = Uri.parse("android.resource://" + packageName + "/" + R.raw.video_3_1)
+        val mediaItem1 = MediaItem.fromUri(videoUri1)
         player1.setMediaItem(mediaItem1)
         player1.prepare()
 
@@ -55,7 +54,8 @@ class modulo3 : AppCompatActivity() {
         playerView2 = findViewById(R.id.video_ejercicio2_modulo3)
         player2 = ExoPlayer.Builder(this).build()
         playerView2.player = player2
-        val mediaItem2 = MediaItem.fromUri(urlVideos + "video_3.2.mp4")
+        val videoUri2 = Uri.parse("android.resource://" + packageName + "/" + R.raw.video_3_2)
+        val mediaItem2 = MediaItem.fromUri(videoUri2)
         player2.setMediaItem(mediaItem2)
         player2.prepare()
 
@@ -63,7 +63,8 @@ class modulo3 : AppCompatActivity() {
         playerView3 = findViewById(R.id.video_ejercicio3_modulo3)
         player3 = ExoPlayer.Builder(this).build()
         playerView3.player = player3
-        val mediaItem3 = MediaItem.fromUri(urlVideos + "video_3.3.mp4")
+        val videoUri3 = Uri.parse("android.resource://" + packageName + "/" + R.raw.video_3_3)
+        val mediaItem3 = MediaItem.fromUri(videoUri3)
         player3.setMediaItem(mediaItem3)
         player3.prepare()
 
@@ -71,7 +72,8 @@ class modulo3 : AppCompatActivity() {
         playerView4 = findViewById(R.id.video_ejercicio4_modulo3)
         player4 = ExoPlayer.Builder(this).build()
         playerView4.player = player4
-        val mediaItem4 = MediaItem.fromUri(urlVideos + "video_3.4.mp4")
+        val videoUri4 = Uri.parse("android.resource://" + packageName + "/" + R.raw.video_3_4)
+        val mediaItem4 = MediaItem.fromUri(videoUri4)
         player4.setMediaItem(mediaItem4)
         player4.prepare()
 
@@ -167,4 +169,3 @@ class modulo3 : AppCompatActivity() {
         player4.release()
     }
 }
-

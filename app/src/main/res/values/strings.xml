@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">rehapp_20</string>
+    <string name="app_name">Rehapp</string>
 
     // strings bienvenida
     <string name="titulo_bienvenida">!BIENVENIDO¡</string>
@@ -269,11 +269,28 @@
     <string name="ic_atras">atras</string>
     <string name="sendMail">Enviar correo de restablecimiento</string>
 
+    strings
+
     //calendario//
 
     <string name="date_format">%1$d-%2$s-%3$s</string>
     <string name="modulo5">Modulo 5</string>
     <string name="text_complete">complete</string>
     <string name="text_ejercicio">Introducción :</string>
+
+    //notificaciones//
+
+    <string name="channel_name">Notificaciones RehApp</string>
+    <string name="channel_description">Notificaciones para citas y recordatorios de RehApp</string>
+
+    <string name="notification_title">Nueva notificación</string>
+    <string name="notification_content">Tienes una nueva notificación de RehApp</string>
+
+    <string name="recent_notifications">Notificaciones recientes</string>
+    <string name="archived_notifications">Notificaciones archivadas</string>
+    <string name="delete_all_notifications">Borrar todas las notificaciones</string>
+
+
+
 
 </resources>

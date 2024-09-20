@@ -13,7 +13,6 @@ import com.example.rehapp_20.Reproductor22
 import com.example.rehapp_20.Reproductor23
 import com.example.rehapp_20.Reproductor24
 import com.example.rehapp_20.perfil_paciente
-import com.example.rehapp_20.utils.Constants
 
 class modulo2 : AppCompatActivity() {
 
@@ -41,13 +40,14 @@ class modulo2 : AppCompatActivity() {
     }
 
     private fun initializePlayers() {
-        val urlVideos = Constants.BASE_URL
+
+        // Cargar videos desde la carpeta raw
 
         // Video 1
         playerView1 = findViewById(R.id.video_ejercicio1_modulo2)
         player1 = ExoPlayer.Builder(this).build()
         playerView1.player = player1
-        val mediaItem1 = MediaItem.fromUri(urlVideos + "video_2.1.mp4")
+        val mediaItem1 = MediaItem.fromUri("android.resource://" + packageName + "/" + R.raw.video_2_1)
         player1.setMediaItem(mediaItem1)
         player1.prepare()
 
@@ -55,7 +55,7 @@ class modulo2 : AppCompatActivity() {
         playerView2 = findViewById(R.id.video_ejercicio2_modulo2)
         player2 = ExoPlayer.Builder(this).build()
         playerView2.player = player2
-        val mediaItem2 = MediaItem.fromUri(urlVideos + "video_2.2.mp4")
+        val mediaItem2 = MediaItem.fromUri("android.resource://" + packageName + "/" + R.raw.video_2_2)
         player2.setMediaItem(mediaItem2)
         player2.prepare()
 
@@ -63,7 +63,7 @@ class modulo2 : AppCompatActivity() {
         playerView3 = findViewById(R.id.video_ejercicio3_modulo2)
         player3 = ExoPlayer.Builder(this).build()
         playerView3.player = player3
-        val mediaItem3 = MediaItem.fromUri(urlVideos + "video_2.3.mp4")
+        val mediaItem3 = MediaItem.fromUri("android.resource://" + packageName + "/" + R.raw.video_2_3)
         player3.setMediaItem(mediaItem3)
         player3.prepare()
 
@@ -71,7 +71,7 @@ class modulo2 : AppCompatActivity() {
         playerView4 = findViewById(R.id.video_ejercicio4_modulo2)
         player4 = ExoPlayer.Builder(this).build()
         playerView4.player = player4
-        val mediaItem4 = MediaItem.fromUri(urlVideos + "video_2.4.mp4")
+        val mediaItem4 = MediaItem.fromUri("android.resource://" + packageName + "/" + R.raw.video_2_4)
         player4.setMediaItem(mediaItem4)
         player4.prepare()
 

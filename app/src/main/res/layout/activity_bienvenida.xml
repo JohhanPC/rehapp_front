@@ -136,29 +136,62 @@
                 android:layout_height="wrap_content"
                 android:background="@color/botones_amarillos_inicio_sesion"
                 android:layout_marginTop="10dp"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:padding="10dp"
                 android:gravity="center_vertical">
 
                 <TextView
                     android:id="@+id/text_view_description"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="App aplicada a la rehabilitación física. ¡Aprende, crea, crece!"
-                    android:textStyle="bold"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black" />
-
-                <Button
-                    android:id="@+id/button_comencemos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="11sp"
-                    android:text="COMENCEMOS"
-                    android:textColor="@android:color/white"
-                    android:backgroundTint="@android:color/black" />
+                    android:text="selecciona tu rol para iniciar sesión:"
+                    android:textStyle="bold|italic"
+                    android:layout_gravity="center"
+                    android:textSize="22sp"
+                    android:textColor="@android:color/black" />
 
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/botones_amarillos_inicio_sesion"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <Button
+                        android:id="@+id/button_fisioterapeuta"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="13sp"
+                        android:text="FISIOTERAPEUTA"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="@android:color/black"
+                        />
+
+
+
+
+
+
+                    <Button
+                        android:id="@+id/button_paciente"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="13sp"
+                        android:textAlignment="center"
+                        android:text="PACIENTE"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="@android:color/black"
+                        />
+
+
+
+                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>

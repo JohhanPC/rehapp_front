@@ -7,6 +7,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.rehapp_20.views.Calendario
+import com.example.rehapp_20.views.Notificaciones
 
 class menu_fisio : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,5 +33,13 @@ class menu_fisio : AppCompatActivity() {
                 startActivity(intent)
 
             }
+        val concuesta2: ImageView = findViewById(R.id.imagen_modulo2)
+        concuesta2.setOnClickListener {
+
+            val intent: Intent = Intent(this, Notificaciones_fisio :: class.java)
+            startActivity(intent)
+
+    }
+
 }
 }

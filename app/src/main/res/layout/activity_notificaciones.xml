@@ -55,87 +55,183 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/notificacion1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_marginTop="24dp"
-                    android:padding="5dp"
+                    android:padding="16dp"
                     android:background="@color/azulModulo1.2">
 
-                    <ImageView
-                        android:id="@+id/imagefoto_usuario"
-                        android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="20dp"
-                        android:padding="10dp"
-                        android:src="@drawable/foto_usuario" />
+                        android:text="Datos de la cita"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="16dp">
-
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp">
                         <TextView
-                            android:id="@+id/textView_realizaModulosNotificaciones"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            android:text="Realiza tus Módulos"
-                            android:textSize="17sp"
-                            android:textColor="@color/white" />
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
 
                         <TextView
-                            android:id="@+id/textView_BienvenidaNotificaciones"
+                            android:id="@+id/tv_notificacion1_modulo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Bienvenidos a Rehapp!"
-                            android:textSize="14sp"
-                            android:textColor="@color/white" />
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/tv_notificacion1_fisio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/tv_notificacion1_fecha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/tv_notificacion1_hora"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"/>
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/notificacion2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="5dp"
-                    android:background="@android:color/transparent">
+                    android:orientation="vertical"
+                    android:layout_marginTop="24dp"
+                    android:padding="16dp"
+                    android:background="@color/azulModulo1.2">
 
-                    <ImageView
-                        android:id="@+id/imagefoto_fisio"
-                        android:layout_width="wrap_content"
+                    <!-- Estructura idéntica a notificacion1 -->
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="20dp"
-                        android:padding="10dp"
-                        android:src="@drawable/foto_fisioterapeuta" />
+                        android:text="Datos de la cita"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="16dp">
-
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp">
                         <TextView
-                            android:id="@+id/textViewFisioVirtual"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            android:text="Tu Fisioterapeuta Virtual!"
-                            android:textSize="16sp"
-                            android:textColor="@color/white" />
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
 
                         <TextView
-                            android:id="@+id/textViewCompletaNotificaciones"
+                            android:id="@+id/tv_notificacion2_modulo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Completa tus módulos!"
-                            android:textSize="14sp"
-                            android:textColor="@color/white" />
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/tv_notificacion2_fisio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/tv_notificacion2_fecha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/tv_notificacion2_hora"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"/>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -169,16 +265,6 @@
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/ic_calendario"
                 android:layout_marginLeft="32dp"
-                android:layout_marginRight="32dp" />
-
-            <ImageButton
-                android:id="@+id/nav_playCalendario"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_playcalendario"
-                android:background="@android:color/transparent"
-                android:contentDescription=""
-                android:layout_marginLeft="3dp"
                 android:layout_marginRight="32dp" />
 
             <ImageButton

@@ -19,7 +19,7 @@ class MainActivity_Registro_Exitoso : AppCompatActivity() {
 
         // Configura un listener para manejar los clics en el botón. Al hacer clic, se navega a la actividad 'MainActivity_Menu_Principal'.
         txt.setOnClickListener {
-            val intent: Intent = Intent(this, MainActivity_Menu_Principal::class.java)
+            val intent: Intent = Intent(this, activity_inicio_paciente::class.java)
             startActivity(intent) // Inicia la actividad 'MainActivity_Menu_Principal'.
         }
     }

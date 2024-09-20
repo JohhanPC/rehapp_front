@@ -7,6 +7,7 @@ import android.widget.ImageView
 import com.example.rehapp_20.R
 import com.example.rehapp_20.perfil_paciente
 import com.example.rehapp_20.vista_fisio
+import android.net.Uri
 
 // La clase MainActivity_Menu_Principal extiende AppCompatActivity, lo que la convierte en una actividad principal de la aplicación.
 class MainActivity_Menu_Principal : AppCompatActivity() {
@@ -61,13 +62,17 @@ class MainActivity_Menu_Principal : AppCompatActivity() {
             startActivity(intent) // Inicia la actividad 'Notificaciones'.
         }
 
-        // Encuentra la ImageView con el ID 'imagen_modulo6' y la asigna a la variable 'Concuenta3'.
-        val Concuenta3: ImageView = findViewById(R.id.imagen_modulo6)
+        val imagenModulo6 = findViewById<ImageView>(R.id.imagen_modulo6)
 
-        // Listener para la imagen que inicia la actividad 'perfil_usuario'.
-        Concuenta3.setOnClickListener {
-            val intent: Intent = Intent(this, perfil_usuario::class.java)
-            startActivity(intent) // Inicia la actividad 'perfil_usuario'.
-        }
+        // Añadir un listener para hacer clic en la imagen
+        imagenModulo6.setOnClickListener {
+            val url = "https://www.tusitioweb.com" // Cambia la URL por la que desees
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(url)
+            startActivity(intent)
+
+
+
     }
+}
 }

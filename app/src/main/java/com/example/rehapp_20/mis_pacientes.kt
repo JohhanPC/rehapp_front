@@ -17,11 +17,23 @@ class mis_pacientes : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-        }
-        val txt1: ImageView = findViewById(R.id.flecha_avanzar_perfil_paciente1)
-        txt1.setOnClickListener {
-            val intent: Intent = Intent(this, Reproductor11::class.java)
-            startActivity(intent)
+
+
     }
+    val concuesta4: ImageView = findViewById(R.id.flecha_avanzar_perfil_paciente1)
+    concuesta4.setOnClickListener {
+
+        val intent: Intent = Intent(this, vista_paciente :: class.java)
+        startActivity(intent)
+    }
+        val concuesta2: ImageView = findViewById(R.id.image_center )
+        concuesta2.setOnClickListener {
+
+            val intent: Intent = Intent(this, buscar_paciente :: class.java)
+            startActivity(intent)
+
+
+        }
 }
 }
+

@@ -24,16 +24,34 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.example.rehapp_20.R
+import com.example.rehapp_20.databinding.ActivityCalendarioBinding
 import java.util.Calendar
 
+@Suppress("DEPRECATION")
 class Calendario : AppCompatActivity() {
     private val selectedCalendar = Calendar.getInstance()
+    private lateinit var binding: ActivityCalendarioBinding
+
+    private lateinit var tvConfirmModule: TextView
+    private lateinit var tvConfirmFisio: TextView
+    private lateinit var tvConfirmFecha: TextView
+    private lateinit var tvConfirmHora: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge() // Habilita el modo Edge-to-Edge
         setContentView(R.layout.activity_calendario) // Establece el diseño de la actividad
+
+        binding = ActivityCalendarioBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btnConfirmar.setOnClickListener {
+            if (validarFormulario()) {
+                enviarDatosANotificaciones()
+            }
+        }
+
 
         val BotonNotificacion = findViewById<Button>(R.id.btn_confirmar)
         crearCanal() // Crea el canal de notificaciones si es necesario
@@ -41,6 +59,63 @@ class Calendario : AppCompatActivity() {
         BotonNotificacion.setOnClickListener {
             checkPermisos() // Verifica permisos para notificaciones
         }
+
+        // Initialize TextView fields
+        tvConfirmModule = findViewById(R.id.tv_resumen_modulo)
+        tvConfirmFisio = findViewById(R.id.tv_resumen_fisio)
+        tvConfirmFecha = findViewById(R.id.tv_resumen_fecha)
+        tvConfirmHora = findViewById(R.id.tv_resumen_hora)
+
+//        // Set up the confirm button
+//        findViewById<Button>(R.id.btn_confirmar).setOnClickListener {
+//            confirmarCita()
+//        }
+
+    }
+    private fun validarFormulario(): Boolean {
+        val modulo = binding.tvResumenModulo.text.toString().trim()
+        val fisioterapeuta = binding.tvResumenFisio.text.toString().trim()
+        val fecha = binding.tvResumenFecha.text.toString().trim()
+        val hora = binding.tvResumenHora.text.toString().trim()
+
+
+        return when {
+            modulo.isEmpty() -> {
+                binding.tvResumenModulo.error = "El modulo es requerido"
+                false
+            }
+            fisioterapeuta.isEmpty() -> {
+                binding.tvResumenFisio.error = "El fisioterapeuta es requerido"
+                false
+            }
+            fecha.isEmpty() -> {
+                binding.tvResumenFecha.error = "La fecha es requerida"
+                false
+            }
+            hora.isEmpty() -> {
+                binding.tvResumenHora.error = "La hora es requerido"
+                false
+            }
+            else -> true
+        }
+    }
+
+    private fun enviarDatosANotificaciones() {
+        val modulo = binding.tvResumenModulo.text.toString().trim()
+        val fisioterapeuta = binding.tvResumenFisio.text.toString().trim()
+        val fecha = binding.tvResumenFecha.text.toString().trim()
+        val hora = binding.tvResumenHora.text.toString().trim()
+
+
+        val intent = Intent(this, Notificaciones::class.java).apply {
+            putExtra("modulo", modulo)
+            putExtra("fisioterapeuta", fisioterapeuta)
+            putExtra("fecha", fecha)
+            putExtra("hora", hora)
+        }
+        startActivity(intent)
+        Toast.makeText(applicationContext, "Cita creada exitosamente!", Toast.LENGTH_SHORT).show()
+        finish()
     }
 
     // Verifica si los permisos de notificación están concedidos
@@ -163,18 +238,12 @@ class Calendario : AppCompatActivity() {
         }
 
         btnConfirm.setOnClickListener {
-            Toast.makeText(applicationContext, "Cita creada exitosamente!!", Toast.LENGTH_SHORT).show()
-            finish() // Finaliza la actividad al confirmar
+            enviarDatosANotificaciones()
         }
     }
 
     // Muestra los datos de la cita en la vista de resumen
     private fun showAppointmentDataToConfirm() {
-        val tvConfirmModule = findViewById<TextView>(R.id.tv_resumen_modulo)
-        val tvConfirmFisio = findViewById<TextView>(R.id.tv_resumen_fisio)
-        val tvConfirmFecha = findViewById<TextView>(R.id.tv_resumen_fecha)
-        val tvConfirmHora = findViewById<TextView>(R.id.tv_resumen_hora)
-
         val etScheduledDate = findViewById<EditText>(R.id.btn_go_to_calendario)
         val spinnerHora = findViewById<Spinner>(R.id.spinner_horas)
         val spinnerModule = findViewById<Spinner>(R.id.spinner_modulo)
@@ -185,6 +254,21 @@ class Calendario : AppCompatActivity() {
         tvConfirmModule.text = spinnerModule.selectedItem.toString()
         tvConfirmHora.text = spinnerHora.selectedItem.toString()
     }
+
+//    // Confirma la cita y envía un broadcast con los datos
+//    private fun confirmarCita() {
+//        // Enviar broadcast con los datos de la cita
+//        val intent = Intent("NUEVA_CITA_CREADA").apply {
+//            putExtra("MODULO", tvConfirmModule.text.toString())
+//            putExtra("FISIOTERAPEUTA", tvConfirmFisio.text.toString())
+//            putExtra("FECHA", tvConfirmFecha.text.toString())
+//            putExtra("HORA", tvConfirmHora.text.toString())
+//        }
+//        LocalBroadcastManager.getInstance(this).sendBroadcast(intent)
+//
+//        Toast.makeText(applicationContext, "Cita creada exitosamente!", Toast.LENGTH_SHORT).show()
+//        finish()
+//    }
 
     // Extiende la clase Int para convertir números en formato de dos dígitos
     private fun Int.twoDigits() =
@@ -199,20 +283,15 @@ class Calendario : AppCompatActivity() {
         builder.setMessage("Si abandonas el registro, los datos ingresados se perderán.")
         builder.setPositiveButton("Salir") { _, _ ->
             finish() // Finaliza la actividad si el usuario elige salir
-
         }
-        builder.setNegativeButton("Continuar"){dialog, _ ->
+        builder.setNegativeButton("Continuar") { dialog, _ ->
             dialog.dismiss()
-
         }
 
         val dialog = builder.create()
         dialog.show()
-
     }
-
 }
-
 
 
 

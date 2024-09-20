@@ -109,16 +109,7 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="20dp"
-                        app:cardElevation="4dp">
-
-                        <ImageView
-                            android:id="@+id/imagen_modulo3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/card_mis_citas" />
-                    </androidx.cardview.widget.CardView>
+                        app:cardElevation="4dp"/>
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="0dp"

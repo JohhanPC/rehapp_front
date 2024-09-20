@@ -95,7 +95,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold|italic" />
 
-            <EditText
+            <TextView
                 android:id="@+id/edit_text_nombre_paciente"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
@@ -118,7 +118,7 @@
                 android:textColor="@color/grismodulo2"
                 android:textSize="14sp"
                 android:textStyle="bold|italic" />
-            <EditText
+            <TextView
                 android:id="@+id/edit_text_identificacion_paciente"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
@@ -141,7 +141,7 @@
                 android:textColor="@color/grismodulo2"
                 android:textSize="14sp"
                 android:textStyle="bold|italic" />
-            <EditText
+            <TextView
                 android:id="@+id/edit_text_ubicacion_paciente"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
@@ -165,7 +165,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold|italic" />
 
-            <EditText
+            <TextView
                 android:id="@+id/edit_text_contacto_paciente"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
@@ -190,7 +190,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold|italic" />
 
-            <EditText
+            <TextView
                 android:id="@+id/edit_text_Correo_paciente"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
@@ -214,7 +214,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold|italic" />
 
-            <EditText
+            <TextView
                 android:id="@+id/edit_text_edad_paciente"
                 android:layout_width="300dp"
                 android:layout_height="45dp"

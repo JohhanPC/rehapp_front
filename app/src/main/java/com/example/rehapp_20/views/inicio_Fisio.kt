@@ -11,6 +11,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.rehapp_20.R
+import com.example.rehapp_20.menu_fisio
 import com.example.rehapp_20.perfil_fisio
 import com.example.rehapp_20.viewmodels.UserViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -41,7 +42,7 @@ class inicio_Fisio : AppCompatActivity() {
             if (response.isSuccessful) {
                 Log.d("inicio_Fisio", "Login exitoso, navegando a perfil_fisio")
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, perfil_fisio::class.java)
+                val intent = Intent(this, menu_fisio::class.java)
                 startActivity(intent)
                 finish()
             } else {
@@ -51,12 +52,6 @@ class inicio_Fisio : AppCompatActivity() {
             }
         })
 
-        // Setup button listener para el registro de paciente
-        val buttonLinkRegistro: Button = findViewById(R.id.ButtonLinkRegistro)
-        buttonLinkRegistro.setOnClickListener {
-            val intent = Intent(this, activity_registro_usuario::class.java)
-            startActivity(intent)
-        }
 
         // Setup listener para registro de fisioterapeuta
         val buttonRegistroFisio: Button = findViewById(R.id.ButtonRegistroFisio)

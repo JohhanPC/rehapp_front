@@ -70,7 +70,7 @@
                 android:layout_marginBottom="16dp"
                 android:layout_marginTop="150dp"
                 android:textSize="13sp"
-                android:text="Iniciar Sesion"
+                android:text="Comencemos"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/boton_verde_bienvenido"/>
 

@@ -68,7 +68,7 @@ class activity_registro_usuario : AppCompatActivity() {
                 // Si el registro fue exitoso, se muestra un mensaje y se navega a la actividad de éxito
                 Log.d(TAG, "onCreate: Registro exitoso con respuesta: ${response.body()}")
                 Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, registro_exitoso_Fisio::class.java)
+                val intent = Intent(this, MainActivity_Registro_Exitoso::class.java)
                 startActivity(intent)
             } else {
                 // Si hubo un error en el registro, se muestra un mensaje de error y se loguea el fallo

@@ -110,13 +110,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="60dp"
-                        android:layout_marginRight="60dp"
-                        android:padding="10dp"
-                        android:backgroundTint="@color/azulCalendario"
                         android:layout_marginTop="10dp"
-                        android:text="Crear cita"
+                        android:layout_marginRight="60dp"
+                        android:backgroundTint="@color/azulCalendario"
+                        android:padding="10dp"
                         android:paddingLeft="60dp"
-                        android:paddingRight="60dp">
+                        android:paddingRight="60dp"
+                        android:text="Crear cita">
 
                     </Button>
 
@@ -167,7 +167,7 @@
                             android:id="@+id/tv_resumen_modulo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Flexion y estiramiento" />
+                            android:hint="Flexion y estiramiento" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -185,7 +185,7 @@
                             android:id="@+id/tv_resumen_fisio"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fisioterapeuta 1" />
+                            android:hint="Fisioterapeuta 1" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -203,7 +203,7 @@
                             android:id="@+id/tv_resumen_fecha"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="31/07/24" />
+                            android:hint="31/07/24" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -221,7 +221,7 @@
                             android:id="@+id/tv_resumen_hora"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="8:00 a.m." />
+                            android:hint="8:00 a.m." />
                     </LinearLayout>
 
                     <Button
@@ -442,14 +442,6 @@
             android:layout_marginLeft="32dp"
             android:layout_marginRight="32dp" />
 
-        <ImageButton
-            android:id="@+id/nav_playCalendario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_playcalendario"
-            android:background="@android:color/transparent"
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="32dp" />
 
         <ImageButton
             android:id="@+id/nav_back"

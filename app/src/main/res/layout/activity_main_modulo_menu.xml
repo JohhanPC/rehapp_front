@@ -37,8 +37,6 @@
                     android:textSize="30sp"
                     android:textColor="@color/titulosModulos" />
 
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -166,7 +164,6 @@
                     </LinearLayout>
                 </LinearLayout>
 
-
                 <LinearLayout
                     android:id="@+id/Liner3"
                     android:layout_width="match_parent"
@@ -212,95 +209,6 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/Liner4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:background="@color/white">
-
-                    <ImageView
-                        android:id="@+id/modulo4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="20dp"
-                        android:padding="10dp"
-                        android:src="@drawable/modulo4" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="16dp">
-
-                        <TextView
-                            android:id="@+id/textmodulo4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            android:text="Modulo 4"
-                            android:textStyle="bold"
-                            android:textSize="16sp"
-                            android:textColor="@color/black" />
-
-                        <TextView
-                            android:id="@+id/textViewCompletaNotificaciones4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Artrosis de mano y de dedos"
-                            android:textSize="14sp"
-                            android:textColor="@color/black" />
-
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/Liner5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:background="@color/white">
-
-                    <ImageView
-                        android:id="@+id/modulo5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="20dp"
-                        android:padding="10dp"
-                        android:src="@drawable/modulo5" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="16dp">
-
-                        <TextView
-                            android:id="@+id/textmodulo5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            android:text="Modulo 5"
-                            android:textStyle="bold"
-                            android:textSize="16sp"
-                            android:textColor="@color/black" />
-
-                        <TextView
-                            android:id="@+id/textViewCompletaNotificaciones5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Extension del dedo"
-                            android:textSize="14sp"
-                            android:textColor="@color/black" />
-
-                    </LinearLayout>
-                </LinearLayout>
             </LinearLayout>
         </ScrollView>
 
@@ -332,8 +240,6 @@
                 android:contentDescription="@string/ic_calendario"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp" />
-
-
 
             <ImageButton
                 android:id="@+id/nav_Atras"

@@ -2,44 +2,47 @@ package com.example.rehapp_20
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.net.Uri
 import androidx.media3.common.MediaItem
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.ui.PlayerView
-import com.example.rehapp_20.R
-import com.example.rehapp_20.utils.Constants
 
-class Reproductor13: AppCompatActivity() {
+class Reproductor13 : AppCompatActivity() {
 
-    lateinit var playerView:PlayerView
-    lateinit var player:ExoPlayer
-
+    private lateinit var playerView: PlayerView
+    private lateinit var player: ExoPlayer
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        val urlVideos = Constants.BASE_URL
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reproductor13)
 
+        // Inicialización del PlayerView y el ExoPlayer
+        playerView = findViewById(R.id.videoModulo1)
+        player = ExoPlayer.Builder(this).build()
+        playerView.player = player
 
-
-        playerView=findViewById(R.id.videoModulo1)
-        player=ExoPlayer.Builder(this).build()
-
-        playerView.player=player
-
-        val mediaItem=MediaItem.fromUri(urlVideos + "video_1.3.mp4")
-
+        // Cargar el video desde los recursos internos
+        val videoUri = Uri.parse("android.resource://" + packageName + "/" + R.raw.video_1_3)
+        val mediaItem = MediaItem.fromUri(videoUri)
         player.setMediaItem(mediaItem)
         player.prepare()
-        player.play()
+
+        // Reproducción automática
+        player.playWhenReady = true
     }
+
     override fun onPause() {
         super.onPause()
-        player.pause()
+        // Mantener el video en reproducción al pausar la actividad
+        player.playWhenReady = false
     }
+
     override fun onResume() {
         super.onResume()
-        player.play()
+        // Reanudar la reproducción al reanudar la actividad
+        player.playWhenReady = true
     }
+
     override fun onDestroy() {
         super.onDestroy()
         player.release()

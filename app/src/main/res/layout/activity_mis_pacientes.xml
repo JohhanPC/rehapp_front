@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/fondo_mis_pacientes"
-    tools:context=".MainActivity">
+    tools:context=".mis_pacientes">
 
 
     <ScrollView
@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="30dp"
                 android:layout_gravity="center"
-                android:text="¡Hola Leonardo!"
+                android:text="¡Hola!"
                 android:textSize="20sp"
                 android:textColor="@color/white" />
 

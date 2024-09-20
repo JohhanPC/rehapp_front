@@ -26,7 +26,7 @@ class reproductor: AppCompatActivity() {
 
         playerView.player=player
 
-        val mediaItem=MediaItem.fromUri(urlVideos + "BIENVENIDA_REHAAP.mp4")
+        val mediaItem=MediaItem.fromUri(urlVideos + "")
 
         player.setMediaItem(mediaItem)
         player.prepare()
